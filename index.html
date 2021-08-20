@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Miracle is coming</title>
+  </head>
+  <style type="text/css">
+    body {
+      color: #fff;
+      background-color: #00414b;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      height: 100vw;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    h1 {
+      color: #ffe900;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .unit {
+      font-size: 50%;
+    }
+  </style>
+  <body>
+    <main>
+      <h1><span id="counter">Many</span> <span class="unit">days</span></h1>
+      <span>to a miracle!</span>
+    </main>
+    <script>
+      ;(function() {
+        var a = Math.ceil((1647302400000 - new Date()) / 86400000)
+        document.getElementById('counter').innerText = a > 0 ? a : 'No'
+      })();
+    </script>
+  </body>
+</html>
